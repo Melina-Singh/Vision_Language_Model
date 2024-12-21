@@ -1,4 +1,6 @@
 # Vision_Language_Model
+Used ResNet Model For Image Classification and BLIP For generating the Captions for the Images 
+
 
 ## Authors
 1. Melina Singh
