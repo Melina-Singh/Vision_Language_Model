@@ -8,7 +8,7 @@ class ImageCaptioningModel:
         Initializes the BLIP model for image captioning. 
         The BLIP (Bootstrapping Language-Image Pretraining) model is a powerful model 
         used for generating natural language descriptions from images.
-
+        
         The constructor loads the BLIP processor and model weights from the Salesforce 
         pre-trained repository to facilitate image caption generation.
 
@@ -29,16 +29,14 @@ class ImageCaptioningModel:
         
         This method takes an image, processes it using the BLIP processor, and then 
         generates a caption using the BLIP model. The caption is returned as a string.
-        
         Args:
             image (PIL.Image.Image): A PIL Image object that represents the input image to be captioned.
-
         Returns:
             str: A generated caption describing the image.
-
         Raises:
             ValueError: If the input image is not a PIL Image object.
         """
+        
         # Ensure the input is a PIL Image object
         if not isinstance(image, Image.Image):
             raise ValueError("Expected a PIL Image object. Please provide a valid image.")
@@ -59,6 +57,5 @@ class ImageCaptioningModel:
         # Decode the generated tokens into a human-readable caption
         caption = self.processor.decode(out[0], skip_special_tokens=True)
 
-       
         print(f"Generated Caption: {caption}")
         return caption
