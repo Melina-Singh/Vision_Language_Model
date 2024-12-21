@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image to Text App</title>
+</head>
+<body>
+    <h1>Image Classification and Description Generator</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <label for="image">Choose an image:</label>
+        <input type="file" name="image" id="image">
+        <button type="submit">Upload</button>
+    </form>
+    
+    {% if image_path %}
+    <img src="{{ image_path }}" alt="Uploaded Image" style="width: 300px;">
+    <h3>Predicted Class: {{ predicted_class }}</h3>
+    <p>Generated Description: {{ description }}</p>
+    {% endif %}
+</body>
+</html>
