@@ -9,7 +9,7 @@ classification_model = ResNetModel()
 captioning_model = ImageCaptioningModel()
 
 # Streamlit app UI
-st.title("Image Classification and Captioning App")
+st.title("Vision and Language App")
 st.write("Upload two images at once to classify and generate descriptions.")
 
 # Upload two images
