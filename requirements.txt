@@ -1,0 +1,11 @@
+
+torch
+transformers
+Pillow
+streamlit
+flask
+datasets
+pandas
+numpy
+seaborn
+matplotlib
