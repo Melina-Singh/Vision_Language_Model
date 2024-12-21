@@ -11,6 +11,14 @@ class ResNetModel:
         self.model = AutoModelForImageClassification.from_pretrained(model_name)
 
     def classify_image(self, image):
+        '''Classifies an input image and returns the predicted label using the 
+        pre-trained ResNet model. The image is processed and passed through 
+        the model to generate the classification result.
+        Args:
+            image (PIL.Image.Image): The input image to be classified.
+        Returns:
+            str: The predicted label for the input image based on the classification model.'''
+        
         # Preprocess the image
         inputs = self.feature_extractor(images=image, return_tensors="pt")
 
