@@ -18,13 +18,13 @@ uploaded_images = st.file_uploader("Choose two images...", type=["jpg", "png", "
 if len(uploaded_images) == 2:
     # Process the first image
     image1 = load_image(uploaded_images[0])
-    image1 = resize_image(image1)  # Resize the image for better display
-
+    image1 = resize_image(image1)  
+ 
     # Process the second image
     image2 = load_image(uploaded_images[1])
     image2 = resize_image(image2)  # Resize the image for better display
 
-    # Create columns to display the images side by side
+    #  display the images side by side
     col1, col2 = st.columns(2)
 
     with col1:
@@ -37,7 +37,7 @@ if len(uploaded_images) == 2:
 
         # Generate caption for the first image
         caption1 = captioning_model.generate_caption(image1)
-        formatted_caption1 = format_caption(caption1)  # Format the caption
+        formatted_caption1 = format_caption(caption1)  
         st.write(f"Generated Caption : {formatted_caption1}")
 
     with col2:
@@ -50,7 +50,7 @@ if len(uploaded_images) == 2:
 
         # Generate caption for the second image
         caption2 = captioning_model.generate_caption(image2)
-        formatted_caption2 = format_caption(caption2)  # Format the caption
+        formatted_caption2 = format_caption(caption2) 
         st.write(f"Generated Caption : {formatted_caption2}")
 else:
     st.warning("Please upload exactly two images to proceed.")
