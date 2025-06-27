@@ -28,7 +28,7 @@ class ImageCaptioningModel:
         Generates a caption for a given image using the BLIP model.
         
         This method takes an image, processes it using the BLIP processor, and then 
-        generates a caption using the BLIP model. The caption is returned as a string.
+        generates a caption using the BLIP model. The caption is returned as a string..
         Args:
             image (PIL.Image.Image): A PIL Image object that represents the input image to be captioned.
         Returns:
