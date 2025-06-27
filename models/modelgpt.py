@@ -10,7 +10,7 @@ class ImageCaptioningModel:
         used for generating natural language descriptions from images.
         
         The constructor loads the BLIP processor and model weights from the Salesforce 
-        pre-trained repository to facilitate image caption generation.
+        pre-trained repository to facilitate image caption generation..
 
         Attributes:
             processor (BlipProcessor): Preprocessing utility for images and text used by BLIP.
