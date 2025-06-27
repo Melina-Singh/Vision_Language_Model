@@ -1,5 +1,5 @@
 # vision_model.py
-
+# for text captions
 from transformers import AutoFeatureExtractor, AutoModelForImageClassification
 from PIL import Image
 import torch
