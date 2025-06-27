@@ -14,4 +14,4 @@ def resize_image(image, size=(400, 400)):
     """
     image = image.resize(size)
     return image
-# captions
+# for image
