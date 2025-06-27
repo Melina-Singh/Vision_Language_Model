@@ -2,10 +2,6 @@
 Used ResNet Model For Image Classification and BLIP For generating the Captions for the Images 
 
 
-## Authors
-1. Melina Singh
-2. Rakshya Bhusal
-   
  
 ## Project Demo 
 
