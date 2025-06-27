@@ -8,7 +8,7 @@ from utils.text_utils import format_caption
 classification_model = ResNetModel()
 captioning_model = ImageCaptioningModel()
  
-# Streamlit app UI
+# Streamlit app UI 
 st.title("Vision and Language App") 
 st.write("Upload two images at once to classify and generate descriptions.")
 
@@ -48,7 +48,7 @@ if len(uploaded_images) == 2:
         classification_result2 = classification_model.classify_image(image2)
         st.write(f"Predicted Class for Image 2: {classification_result2}")
 
-        # Generate caption for the second image
+        # Generate caption for the second image (optional) 
         caption2 = captioning_model.generate_caption(image2)
         formatted_caption2 = format_caption(caption2) 
         st.write(f"Generated Caption : {formatted_caption2}")
